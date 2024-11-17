@@ -94,7 +94,7 @@ musicTwo = \relative c' {
   \incipit \relative c' {
     \time 2/2
     \clef "mensural-c3"
-    \key f \major
+    \key c \major
 
     r1
   }
@@ -126,7 +126,7 @@ musicThree = \relative c {
   \incipit \relative c {
     \time 2/2
     \clef "mensural-c4"
-    \key f \major
+    \key c \major
 
     r\breve
   }
