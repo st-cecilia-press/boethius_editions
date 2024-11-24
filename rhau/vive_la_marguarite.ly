@@ -35,21 +35,21 @@ global = {
 
 
 scTempo = \tempo 1 = 70
-minimumSystemSpacingOriginal = #8
-minimumSystemSpacingModern = #8
-minimumSystemSpacingShawm = #8
-minimumSystemSpacingShawmBass = #8
-shawmTransposeFrom = c
-shawmTransposeTo = d
+scMinimumSystemSpacingOriginal = #8
+scMinimumSystemSpacingModern = #8
+scMinimumSystemSpacingShawm = #8
+scMinimumSystemSpacingShawmBass = #8
+scShawmTransposeFrom = c
+scShawmTransposeTo = d
 
 
-musicOneName = "Discantus"
-musicOneInstrument = "oboe"
-musicOneClefOriginal = \clef "soprano"
-musicOneClefModern = \clef "treble"
-musicOneClefShawm = \clef "treble"
-musicOneClefShawmBass = \clef "treble"
-musicOne =  {
+scMusicOneName = "Discantus"
+scMusicOneInstrument = "oboe"
+scMusicOneClefOriginal = \clef "soprano"
+scMusicOneClefModern = \clef "treble"
+scMusicOneClefShawm = \clef "treble"
+scMusicOneClefShawmBass = \clef "treble"
+scMusicOne =  {
 
   \incipit {
     \relative c'' {
@@ -62,8 +62,6 @@ musicOne =  {
   }
 
   \global
-
-
   % cantus: checked against source
   \relative c'' {
     g1 g2 g a a b1 g r2 a2 d d b1 c a2 d2. c4 b a  g2 c2. b4 a g a1 r2 g2
@@ -74,18 +72,15 @@ musicOne =  {
     d4 c b a g2 c2. b4 a g a2 b2. a4 g f g2 a2. g4 g1 \ficta fs2 g\longa*1/4 \fine
   }
 
-
-
-
 }
 
-musicTwoName = "Tenor"
-musicTwoInstrument = "oboe"
-musicTwoClefOriginal = \clef "alto"
-musicTwoClefModern = \clef "treble_8"
-musicTwoClefShawm = \clef "treble_8"
-musicTwoClefShawmBass = \clef "tenor"
-musicTwo = \relative c' {
+scMusicTwoName = "Tenor"
+scMusicTwoInstrument = "oboe"
+scMusicTwoClefOriginal = \clef "alto"
+scMusicTwoClefModern = \clef "treble_8"
+scMusicTwoClefShawm = \clef "treble_8"
+scMusicTwoClefShawmBass = \clef "tenor"
+scMusicTwo = \relative c' {
 
   \global
 
@@ -108,21 +103,15 @@ musicTwo = \relative c' {
     e2 c f1 d2 g2. f4 e d c2 f2. e4 d c d2 e2. d4 c b c b a g a1 g\longa*1/4 \fine
 
   }
-
-
-
-  % Music follows here.
-
 }
 
-musicThreeName = "Bassus"
-musicThreeInstrument = "trombone"
-musicThreeClefOriginal = \clef "tenor"
-musicThreeClefModern = \clef "treble_8"
-musicThreeClefShawm = \clef "treble_8"
-musicThreeClefShawmBass = \clef "bass"
-musicThree = \relative c {
-  % Music follows here.
+scMusicThreeName = "Bassus"
+scMusicThreeInstrument = "trombone"
+scMusicThreeClefOriginal = \clef "tenor"
+scMusicThreeClefModern = \clef "treble_8"
+scMusicThreeClefShawm = \clef "treble_8"
+scMusicThreeClefShawmBass = \clef "bass"
+scMusicThree = \relative c {
   \incipit \relative c {
     \time 2/2
     \clef "mensural-c4"
@@ -133,10 +122,6 @@ musicThree = \relative c {
 
   \global
 
-
-
-
-
   \relative c' {
     r\breve r1 g1 g2 g a a b1 g r2 a2 d d b1 c a2 d2. c4 b a g2 c2. b4 b2 a1
     g1 r2 c,2 c c d1 e c2 c f2. e4 d2 d c1 r2 e2 f a g d e1 d1 r2 g2 b b a4 g a b
@@ -144,11 +129,62 @@ musicThree = \relative c {
     d'2 d d b g c1 a2 d2. c4 b a g2 c2. b4 a g f e d2 g2. f4 e d e2 f g f4 e d1 r1 d'2 d d b
     g2 c1 a2 d2. c4 b a g2 c2. b4 a g f e d2 g2. f4 e d e2 f g f4 e d1 g\longa*1/4 \fine
   }
-
-
-
-
 }
+
+scWordsOne =   \lyricmode {
+  Vi -- ve la Mar -- gua -- ri -- te
+  c'est un -- e no -- _ ble fleur __ _ _ _ _ _ _ _ _ _
+  por -- tant s'elle est pe -- _ ti -- te
+  elle est __ _ _ de grant __ _  _ _ _ _ _ va --   leur,
+  elle  est __ _ _ _ _ de __ _ grant  va -- leur
+  qui voul -- dra se __ _ des -- _ pi -- te
+  qui voul -- dra se __ _  des -- _ pi -- te __ _
+  je luy por -- te -- ray hon -- neur
+
+  Vi -- ve la Mar -- gua -- ri -- te
+  c'est __ _ _ _ _ u -- _ _  _ ne no -- _ _ _ _ _ _ _ ble fleur
+
+  Vi -- ve la Mar -- gua -- ri -- te
+  c'est __ _ _ _ _ _ u -- _ _ _  ne no -- _ _ _ _ _  _ _ ble fleur
+}
+
+scWordsTwo =   \lyricmode {
+  Vi -- ve la Mar -- gua -- ri -- te
+  c'est un -- e no -- _ ble fleur __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  por -- tant se elle est pe -- ti -- _ _ _ _ _ _ te
+  elle est de grant __ _  va --  _ _ _  leur,
+  qui voul -- dra se __ _ _ _ des -- pi -- _ _ te
+  qui voul -- dra se __ _  des -- _ pi -- te __ _
+  je __ _ luy __ _ _ _ por -- te -- ray hon -- neur __ _
+
+  Vi -- ve la Mar -- gua -- ri -- te
+  c'est __ _ _ _ _ u -- _ _  _ ne no -- _ _ _ _ _  _  _ ble fleur
+
+  Vi -- ve la Mar -- gua -- ri -- te
+  c'est __ _ _ _ _ u -- _ _ _  ne no -- _ _ _ _ _  _  _ ble fleur
+}
+
+
+scWordsThree =   \lyricmode {
+  Vi -- ve la Mar -- gua -- ri -- te
+  c'est un -- e no -- _ ble fleur __ _ _ _ _ _ _ _ _ _
+  por -- tant s'elle est pe -- tite
+  elle est de grant  va --  leur,
+  elle est de grant  va -- _ leur
+  qui voul -- dra __ _ _ _ _ sen _ des -- _ _ _ pi -- te
+  qui voul -- dra __ _ _  _ _ sen  des -- pi -- _ _ _ te
+  je luy __ _ por -- te -- ray hon -- neur
+
+  Vi -- ve la Mar -- gua -- ri -- te
+  c'est __ _ _ _ _ u -- _ _  _ _ _ ne no -- _ _ _ ble fleur __ _ _ _ _
+
+  Vi -- ve la Mar -- gua -- ri --  te
+  c'est __ _ _ _ _ u -- _ _ _ _ _  ne no -- _ _ _ ble fleur __ _ _ _ _ _
+}
+
+scSpacingOriginal = { s\breve }
+scSpacingModern = { s\breve }
+scSpacingShawm = { s\breve }
 
 \book {
   \bookOutputSuffix "original"
@@ -156,24 +192,32 @@ musicThree = \relative c {
     \new StaffGroup {
       <<
         \new Staff \with {
-          instrumentName = \musicOneName
-          midiInstrument = \musicOneInstrument
+          instrumentName = \scMusicOneName
+          midiInstrument = \scMusicOneInstrument
         } <<
-          \new Voice { s\breve   }
-          \new Voice { \musicOneClefOriginal \musicOne }
+          \new Voice { \scSpacingOriginal   }
+          \new Voice = "one" { \scMusicOneClefOriginal \scMusicOne }
+          \new Lyrics \lyricsto "one" { \scWordsOne }
         >>
 
         \new Staff \with {
-          instrumentName = \musicTwoName
-          midiInstrument = \musicTwoInstrument
+          instrumentName = \scMusicTwoName
+          midiInstrument = \scMusicTwoInstrument
 
-        } { \musicTwoClefOriginal \musicTwo }
+        } <<
+          \new Voice = "two"  { \scMusicTwoClefOriginal \scMusicTwo }
+          \new Lyrics \lyricsto "two" { \scWordsTwo }
 
+        >>
         \new Staff \with {
-          instrumentName = \musicThreeName
-          midiInstrument = \musicThreeInstrument
+          instrumentName = \scMusicThreeName
+          midiInstrument = \scMusicThreeInstrument
 
-        } { \musicThreeClefOriginal \musicThree }
+        }
+        <<
+          \new Voice = "three" { \scMusicThreeClefOriginal \scMusicThree }
+          \new Lyrics \lyricsto "three" { \scWordsThree }
+        >>
       >>
     }
     \layout {
@@ -182,7 +226,7 @@ musicThree = \relative c {
       \context {
         \Staff
         \consists "Ambitus_engraver"
-        measureBarType = "-span|"
+        measureBarType = "'"
       }
     }
     \midi {
@@ -192,7 +236,7 @@ musicThree = \relative c {
   }
 
   \paper {
-    system-system-spacing.minimum-distance = \minimumSystemSpacingModern
+    system-system-spacing.minimum-distance = \scMinimumSystemSpacingModern
     print-page-number = ##f
     print-first-page-number = ##f
     top-margin = 0.5\in
@@ -223,24 +267,32 @@ musicThree = \relative c {
     \new StaffGroup {
       <<
         \new Staff \with {
-          instrumentName = \musicOneName
-          midiInstrument = \musicOneInstrument
+          instrumentName = \scMusicOneName
+          midiInstrument = \scMusicOneInstrument
         } <<
-          \new Voice { s\breve   }
-          \new Voice { \musicOneClefModern \musicOne }
+          \new Voice { \scSpacingModern   }
+          \new Voice = "one" { \scMusicOneClefModern \scMusicOne }
+          \new Lyrics \lyricsto "one" { \scWordsOne }
         >>
 
         \new Staff \with {
-          instrumentName = \musicTwoName
-          midiInstrument = \musicTwoInstrument
+          instrumentName = \scMusicTwoName
+          midiInstrument = \scMusicTwoInstrument
 
-        } { \musicTwoClefModern \musicTwo }
+        } <<
+          \new Voice = "two"  { \scMusicTwoClefModern \scMusicTwo }
+          \new Lyrics \lyricsto "two" { \scWordsTwo }
 
+        >>
         \new Staff \with {
-          instrumentName = \musicThreeName
-          midiInstrument = \musicThreeInstrument
+          instrumentName = \scMusicThreeName
+          midiInstrument = \scMusicThreeInstrument
 
-        } { \musicThreeClefModern \musicThree }
+        }
+        <<
+          \new Voice = "three" { \scMusicThreeClefModern \scMusicThree }
+          \new Lyrics \lyricsto "three" { \scWordsThree }
+        >>
       >>
     }
     \layout {
@@ -249,7 +301,7 @@ musicThree = \relative c {
       \context {
         \Staff
         \consists "Ambitus_engraver"
-        measureBarType = "-span|"
+        measureBarType = "'"
       }
     }
 
@@ -257,7 +309,7 @@ musicThree = \relative c {
   }
 
   \paper {
-    system-system-spacing.minimum-distance = \minimumSystemSpacingModern
+    system-system-spacing.minimum-distance = \scMinimumSystemSpacingModern
     print-page-number = ##f
     print-first-page-number = ##f
     top-margin = 0.5\in
@@ -285,27 +337,35 @@ musicThree = \relative c {
 \book {
   \bookOutputSuffix "shawm"
   \score {
-    \transpose \shawmTransposeFrom \shawmTransposeTo \new StaffGroup {
+    \transpose \scShawmTransposeFrom \scShawmTransposeTo \new StaffGroup {
       <<
         \new Staff \with {
-          instrumentName = \musicOneName
-          midiInstrument = \musicOneInstrument
+          instrumentName = \scMusicOneName
+          midiInstrument = \scMusicOneInstrument
         } <<
-          \new Voice { s\breve   }
-          \new Voice { \musicOneClefShawm \musicOne }
+          \new Voice { \scSpacingShawm   }
+          \new Voice = "one" { \scMusicOneClefShawm \scMusicOne }
+          \new Lyrics \lyricsto "one" { \scWordsOne }
         >>
 
         \new Staff \with {
-          instrumentName = \musicTwoName
-          midiInstrument = \musicTwoInstrument
+          instrumentName = \scMusicTwoName
+          midiInstrument = \scMusicTwoInstrument
 
-        } { \musicTwoClefShawm \musicTwo }
+        } <<
+          \new Voice = "two"  { \scMusicTwoClefShawm \scMusicTwo }
+          \new Lyrics \lyricsto "two" { \scWordsTwo }
 
+        >>
         \new Staff \with {
-          instrumentName = \musicThreeName
-          midiInstrument = \musicThreeInstrument
+          instrumentName = \scMusicThreeName
+          midiInstrument = \scMusicThreeInstrument
 
-        } { \musicThreeClefShawm \musicThree }
+        }
+        <<
+          \new Voice = "three" { \scMusicThreeClefShawm \scMusicThree }
+          \new Lyrics \lyricsto "three" { \scWordsThree }
+        >>
       >>
     }
     \layout {
@@ -314,7 +374,7 @@ musicThree = \relative c {
       \context {
         \Staff
         \consists "Ambitus_engraver"
-        measureBarType = "-span|"
+        measureBarType = "'"
       }
     }
     \midi {
@@ -324,7 +384,7 @@ musicThree = \relative c {
   }
 
   \paper {
-    system-system-spacing.minimum-distance = \minimumSystemSpacingShawm
+    system-system-spacing.minimum-distance = \scMinimumSystemSpacingShawm
     print-page-number = ##f
     print-first-page-number = ##f
     top-margin = 0.5\in
@@ -352,27 +412,27 @@ musicThree = \relative c {
 \book {
   \bookOutputSuffix "shawm-bass"
   \score {
-    \transpose \shawmTransposeFrom \shawmTransposeTo \new StaffGroup {
+    \transpose \scShawmTransposeFrom \scShawmTransposeTo \new StaffGroup {
       <<
         \new Staff \with {
-          instrumentName = \musicOneName
-          midiInstrument = \musicOneInstrument
+          instrumentName = \scMusicOneName
+          midiInstrument = \scMusicOneInstrument
         } <<
           \new Voice { s\breve   }
-          \new Voice { \musicOneClefShawmBass \musicOne }
+          \new Voice { \scMusicOneClefShawmBass \scMusicOne }
         >>
 
         \new Staff \with {
-          instrumentName = \musicTwoName
-          midiInstrument = \musicTwoInstrument
+          instrumentName = \scMusicTwoName
+          midiInstrument = \scMusicTwoInstrument
 
-        } { \musicTwoClefShawmBass \musicTwo }
+        } { \scMusicTwoClefShawmBass \scMusicTwo }
 
         \new Staff \with {
-          instrumentName = \musicThreeName
-          midiInstrument = \musicThreeInstrument
+          instrumentName = \scMusicThreeName
+          midiInstrument = \scMusicThreeInstrument
 
-        } { \musicThreeClefShawmBass \musicThree }
+        } { \scMusicThreeClefShawmBass \scMusicThree }
       >>
     }
     \layout {
@@ -388,7 +448,7 @@ musicThree = \relative c {
   }
 
   \paper {
-    system-system-spacing.minimum-distance = \minimumSystemSpacingShawmBass
+    system-system-spacing.minimum-distance = \scMinimumSystemSpacingShawmBass
     print-page-number = ##f
     print-first-page-number = ##f
     top-margin = 0.5\in
