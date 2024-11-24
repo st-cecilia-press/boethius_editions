@@ -441,7 +441,7 @@ scSpacingShawm = { s\breve }
       \context {
         \Staff
         \consists "Ambitus_engraver"
-        measureBarType = "-span|"
+        measureBarType = "'"
       }
     }
 

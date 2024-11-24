@@ -141,12 +141,9 @@ scMusicThree = \relative c {
 
 }
 
-scWordsOne =   \lyricmode {
-}
-scWordsTwo =   \lyricmode {
-}
-scWordsThree =   \lyricmode {
-}
+scWordsOne =   \lyricmode { }
+scWordsTwo =   \lyricmode { }
+scWordsThree =   \lyricmode { }
 scSpacingOriginal = { s\breve }
 scSpacingModern = { s\breve }
 scSpacingShawm = { s\breve }
@@ -406,7 +403,7 @@ scSpacingShawm = { s\breve }
       \context {
         \Staff
         \consists "Ambitus_engraver"
-        measureBarType = "-span|"
+        measureBarType = "'"
       }
     }
 
