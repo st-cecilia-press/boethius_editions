@@ -81,8 +81,8 @@ scMusicOne =  {
   \relative c'' {
     r\breve r1 g2. a4 b2 c1 b4 a b\breve b2. c4 d2 e2. d4 c1 b4 a b\breve r1 b1 a2 c1 b4 a g2 a g a2. g4 f e d1 r1 
     
-    d'1 d d e\breve. f1. e4 d f1 e d1. c2 \tuplet 3/2 {c\breve b2 a } b1 \tuplet 3/2 {c\breve b2 a } g2 a e1 r2 
-    c'2 b a2. g4 f e d1 c c'\breve \tuplet 3/2 { b\breve a1 } a\breve g1 
+    d'1 d d e\breve. f1. e4 d f1 e d1. c2 c1. b4 a4 b1  c1. b4 a4 g2 a e1 r2 
+    c'2 b a2. g4 f e d1 c c'\breve  b1. a2 a\breve g1 
     
     a\breve r1 g1 f2 a1 g4 f e\breve r1 b'1 a2 c1 b4 a g\breve r1 d'1 c2 e1 d4 c b2. c4 d2 g,1 f4 e d1 r2 g2 a c b2. c4 
     d2 e2. d4 c1 b2 c\longa*1/2 \section
@@ -112,7 +112,7 @@ scMusicTwo = \relative c' {
   \incipit \relative c' {
     \time 2/2
     \clef "mensural-c3"
-    \key f \major
+    \key c \major
 
     c2.
   }
@@ -147,7 +147,7 @@ scMusicThree = \relative c {
   \incipit \relative c {
     \time 2/2
     \clef "mensural-c4"
-    \key f \major
+    \key c \major
 
     r\longa
   }
