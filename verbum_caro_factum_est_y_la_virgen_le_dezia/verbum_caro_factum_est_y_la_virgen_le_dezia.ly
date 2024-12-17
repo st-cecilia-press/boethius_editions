@@ -62,7 +62,7 @@ scMusicOne =  {
   \relative c' {
     f\breve f1 f\breve e1 g\breve g1 a\breve r1 
     
-    a1. g2 f e d1 c d2 e f\breve e1 f\longa s\breve \bar "||"
+    \repeat volta 2 { a1. g2 f e d1 c d2 e f\breve e1 f\longa s\breve }
     a\breve bf1 a g1. f2 f\breve e1 f\breve f1 r\breve. r r r  f\breve f1 f\breve e1 g\breve g1 
     a\breve g1 a1. g2 f e d1 c d2 e f\breve e1 f\longa \bar "|."
   }
