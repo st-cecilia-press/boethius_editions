@@ -32,8 +32,7 @@ fourTwoCutTime = {
 
 global = {
   \key g \dorian
-
-  \fourTwoCutTime
+  \time 4/4
 
   \override Staff.NoteHead.style = #'baroque
 
@@ -54,7 +53,7 @@ scShawmTransposeTo = d
 
 scMusicOneName = "Discantus"
 scMusicOneInstrument = "oboe"
-scMusicOneClefOriginal = \gThree
+scMusicOneClefOriginal = \clef "treble"
 scMusicOneClefModern = \clef "treble"
 scMusicOneClefShawm = \clef "treble"
 scMusicOneClefShawmBass = \clef "treble"
@@ -66,18 +65,18 @@ scMusicOne =  {
 
   \relative c'' {
     \repeat volta 2 {
-      bf4. c8 d c bf4 a4. g8 a4 bf bf8 a g4 bf4 f8 g g a16 g \ficta fs4  \time 2/4 g2
+      bf4. c8 d c bf4 a4. g8 a4 bf bf8 a g4 bf4 f8 g g a16 g  fs4  g2
     }
     \repeat volta 2 {
-      f4. g8 a4 g8 a bf8 a4 g8 a2 bf8 c d4 d8 \ficta cs4  \ficta b8 \time 2/4 d2
+      f4. g8 a4 g8 a bf8 a4 g8 a2 bf8 c d4 d8  cs4   b8 \time 2/4 d2
     }
     \repeat volta 2 {
-      bf8 bf c d f2 bf,8 a4 bf8 a4 g4 a8 bf c d d4 c \time 2/4 d2
+      \time 4/4 bf8 bf c d f2 bf,8 a4 bf8 a4 g4 a8 bf c d d4 cs \time 2/4 d2
     }
 
     \repeat volta 2 {
-      g,4 f f a8 bf16 a g4 g a g8 a bf4 bf a8 f g4 f8 g a bf c bf16 a g8 f
-      g8 f g a bf8 a16 g a8 bf c4 c c bf8. a16 g4 g g a d,4. e8 d e \ficta fs4 g2
+      \time 4/4  g,4 f f a8 bf16 a g4 g a g8 a bf4 bf a8 f g4 f8 g a bf c bf16 a g8 f
+      g8 f g a bf8 a16 g a8 bf c4 c c bf8. a16 g4 g g a d,4. e8 d e fs4 g2
     }
 
   }
@@ -89,7 +88,7 @@ scMusicOne =  {
 
 scMusicTwoName = "Tenor"
 scMusicTwoInstrument = "oboe"
-scMusicTwoClefOriginal = \clef "alto"
+scMusicTwoClefOriginal = \clef "treble_8"
 scMusicTwoClefModern = \clef "treble_8"
 scMusicTwoClefShawm = \clef "treble_8"
 scMusicTwoClefShawmBass = \clef "tenor"
@@ -124,7 +123,7 @@ scMusicThreeName = "Bassus"
 scMusicThreeInstrument = "trombone"
 scMusicThreeClefOriginal = \clef "bass"
 scMusicThreeClefModern = \clef "bass"
-scMusicThreeClefShawm = \clef "treble_8"
+scMusicThreeClefShawm = \clef "bass"
 scMusicThreeClefShawmBass = \clef "bass"
 scMusicThree = \relative c {
   % Music follows here.
@@ -204,7 +203,7 @@ scSpacingShawm = { s\breve }
       \context {
         \Staff
         \consists "Ambitus_engraver"
-        measureBarType = "'"
+        measureBarType = "-span|"
       }
     }
     \midi {
@@ -231,7 +230,7 @@ scSpacingShawm = { s\breve }
             \fromproperty #'page:page-number-string
           }
         }
-        \fill-line { \tiny { \line{© Monique Rio and Aaron Elkiss (CC BY 4.0) | Edition Date: \date } } }
+        \fill-line { \tiny { \line{© Monique Rio (CC BY 4.0) | Edition Date: \date } } }
       }
     }
     evenFooterMarkup = \oddFooterMarkup
@@ -279,7 +278,7 @@ scSpacingShawm = { s\breve }
       \context {
         \Staff
         \consists "Ambitus_engraver"
-        measureBarType = "'"
+        measureBarType = "-span|"
       }
     }
 
@@ -304,7 +303,7 @@ scSpacingShawm = { s\breve }
             \fromproperty #'page:page-number-string
           }
         }
-        \fill-line { \tiny { \line{© Monique Rio and Aaron Elkiss (CC BY 4.0) | Edition Date: \date } } }
+        \fill-line { \tiny { \line{© Monique Rio (CC BY 4.0) | Edition Date: \date } } }
       }
     }
     evenFooterMarkup = \oddFooterMarkup
@@ -352,7 +351,7 @@ scSpacingShawm = { s\breve }
       \context {
         \Staff
         \consists "Ambitus_engraver"
-        measureBarType = "'"
+        measureBarType = "-span|"
       }
     }
     \midi {
@@ -379,7 +378,7 @@ scSpacingShawm = { s\breve }
             \fromproperty #'page:page-number-string
           }
         }
-        \fill-line { \tiny { \line{© Monique Rio and Aaron Elkiss (CC BY 4.0) | Edition Date: \date } } }
+        \fill-line { \tiny { \line{© Monique Rio (CC BY 4.0) | Edition Date: \date } } }
       }
     }
     evenFooterMarkup = \oddFooterMarkup
@@ -443,7 +442,7 @@ scSpacingShawm = { s\breve }
             \fromproperty #'page:page-number-string
           }
         }
-        \fill-line { \tiny { \line{© Monique Rio and Aaron Elkiss (CC BY 4.0) | Edition Date: \date } } }
+        \fill-line { \tiny { \line{© Monique Rio (CC BY 4.0) | Edition Date: \date } } }
       }
     }
     evenFooterMarkup = \oddFooterMarkup
